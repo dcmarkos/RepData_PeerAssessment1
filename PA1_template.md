@@ -1,5 +1,10 @@
-# Reproducible Research: Peer Assessment 1
-dcmarkos  
+---
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+  html_document:
+    keep_md: true
+author: dcmarkos   
+---
 
 
 ## Loading and preprocessing the data
@@ -26,7 +31,7 @@ dcmarkos
     p1
 ```
 
-![](./PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
 
 ```r
 # With na entries removed from dft that perserved NAs:
@@ -48,7 +53,7 @@ dcmarkos
     p2
 ```
 
-![](./PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
 
 ```r
     x<-max(steps_by_interval$steps) # creates a vector for use in the next line
@@ -93,7 +98,7 @@ and this max occurs at 8:35.**
     p3
 ```
 
-![](./PA1_template_files/figure-html/unnamed-chunk-6-1.png) 
+![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png) 
 
 ```r
     mean2 <-as.integer(mean(steps_by_day$steps,na.rm = TRUE)*100)/100
@@ -143,7 +148,7 @@ and this max occurs at 8:35.**
     p4
 ```
 
-![](./PA1_template_files/figure-html/unnamed-chunk-7-1.png) 
+![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png) 
 
 *The weekday has one large peak at around 8:30. Where as, the weekend activity spreads more uniformly throughout the day.*
 
